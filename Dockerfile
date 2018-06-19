@@ -1,7 +1,7 @@
 FROM alpine
 
 # install python
-RUN apk add --no-cache ca-certificates python3 py3-yaml
+RUN apk add --no-cache ca-certificates python3
 
 RUN apk add --no-cache --virtual .build-deps py3-pip openssl build-base python3-dev \
     && pip3 install --no-cache-dir ruamel.yaml \

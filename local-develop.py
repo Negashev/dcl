@@ -83,7 +83,7 @@ def check_yml(source_stack_file, stack_file, source_env_file, env_file):
     if not_in_repo_services:
         for service in not_in_repo_services.keys():
             if service not in src_commented_services.keys():
-                print(f'''                  ==================> The '{service}' service is not needed (if you dont need in this service, remove this from docker-compose.yml and restart)''')
+                print(f'''                  ==================> The '{service}' service is not needed (if you don't need in this service, remove this from docker-compose.yml and restart)''')
     return dest_code
 
 
